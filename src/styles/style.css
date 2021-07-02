@@ -102,7 +102,17 @@ a{
   background-color: darkgrey;
   text-align: center;
 }
-
+.Character-item:hover {
+  transform: scale(1.5);
+  text-decoration: none;
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+  animation-duration: 2s;
+  animation-name: fade;
+  background-color: darkgrey;
+  text-align: center;
+}
 .Character-item a{
   color: #000;
 }
@@ -111,12 +121,6 @@ a{
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
-}
-.Character-item img:hover {
-  width: 160%;
-  height: auto;
-  border-radius: 5px 5px 0 0;
-  position:relative;
 }
 
 .Character-item h2 {
