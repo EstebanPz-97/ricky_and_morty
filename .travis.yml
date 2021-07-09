@@ -1,22 +1,23 @@
 language: node_js
+
 cache:
   directories:
+    - node_modules
     - ~/.npm
 node_js: 
-  - '16.3.0'
-  git:
-    depth: 3
+  - '16'
+git:
+  depth: 3
 script:
-  - "npm run build"
-  - "npm run start"
+  - yarn build
 deploy:
   provider: pages
   edge: true
-  skip_cleanup: true
-  keep_history: true
+  skip-cleanup: true
+  keep-history: true
   github-token: $GITHUB_TOKEN
-  local_dir: dist/
-  target_branch: gh-pages
-  commit_message: "deploy Release"
+  local-dir: dist/
+  target-branch: gh-pages
+  commit_message: "deploy Proyecto "
   on: 
     branch: master
